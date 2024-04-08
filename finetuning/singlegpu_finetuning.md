@@ -1,12 +1,12 @@
 # Fine-tuning with Single GPU
 This recipe steps you through how to finetune a Llama 2 model on the text summarization task using the [samsum](https://huggingface.co/datasets/samsum) dataset on a single GPU.
 
-These are the instructions for using the canonical [finetuning script](../../src/llama_recipes/finetuning.py) in the llama-recipes package.
+These are the instructions for using the canonical [finetuning script](../src/finetuning.py) in the llama-recipes package.
 
 
 ## Requirements
 
-Ensure that you have installed the llama-recipes package ([details](../../README.md#installing)).
+Ensure that you have installed the llama-recipes package ([details](https://github.com/meta-llama/llama-recipes)).
 
 To run fine-tuning on a single GPU, we will make use of two packages:
 1. [PEFT](https://github.com/huggingface/peft) to use parameter-efficient finetuning.
@@ -16,7 +16,7 @@ To run fine-tuning on a single GPU, we will make use of two packages:
 ## How to run it?
 
 ```bash
-python -m finetuning.py  --use_peft --peft_method lora --quantization --use_fp16 --model_name /data/ai/models/nlp/llama/models/llama-2-7b
+python -m finetuning.py  --use_peft --peft_method lora --quantization --use_fp16 --model_name /path_of_model_folder/7B
  --output_dir Path/to/save/PEFT/model
 ```
 The args used in the command above are:
@@ -31,9 +31,9 @@ The args used in the command above are:
  
 ### How to run with different datasets?
 
-Currently 3 open source datasets are supported that can be found in [Datasets config file](../../src/llama_recipes/configs/datasets.py). You can also use your custom dataset (more info [here](./datasets/README.md)).
+Currently 3 open source datasets are supported that can be found in [Datasets config file](../src/configs/datasets.py). You can also use your custom dataset (more info [here](./datasets/README.md)).
 
-* `grammar_dataset` : use this [notebook](../../src/llama_recipes/datasets/grammar_dataset/grammar_dataset_process.ipynb) to pull and process the Jfleg and C4 200M datasets for grammar checking.
+* `grammar_dataset` : use this [notebook](../src/datasets/grammar_dataset/grammar_dataset_process.ipynb) to pull and process the Jfleg and C4 200M datasets for grammar checking.
 
 * `alpaca_dataset` : to get this open source data please download the `aplaca.json` to `dataset` folder.
 
@@ -49,15 +49,15 @@ to run with each of the datasets set the `dataset` flag in the command as shown 
 ```bash
 # grammer_dataset
 
-python -m finetuning.py  --use_peft --peft_method lora --quantization  --dataset grammar_dataset --model_name /data/ai/models/nlp/llama/models/llama-2-7b --output_dir Path/to/save/PEFT/model
+python -m finetuning.py  --use_peft --peft_method lora --quantization  --dataset grammar_dataset --model_name /path_of_model_folder/7B --output_dir Path/to/save/PEFT/model
 
 # alpaca_dataset
 
-python -m finetuning.py  --use_peft --peft_method lora --quantization  --dataset alpaca_dataset --model_name /data/ai/models/nlp/llama/models/llama-2-7b --output_dir Path/to/save/PEFT/model
+python -m finetuning.py  --use_peft --peft_method lora --quantization  --dataset alpaca_dataset --model_name /path_of_model_folder/7B --output_dir Path/to/save/PEFT/model
 
 
 # samsum_dataset
 
-python -m finetuning.py  --use_peft --peft_method lora --quantization  --dataset samsum_dataset --model_name /data/ai/models/nlp/llama/models/llama-2-7b --output_dir Path/to/save/PEFT/model
+python -m finetuning.py  --use_peft --peft_method lora --quantization  --dataset samsum_dataset --model_name /path_of_model_folder/7B --output_dir Path/to/save/PEFT/model
 
 ```
