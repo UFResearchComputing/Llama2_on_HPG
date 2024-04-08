@@ -4,7 +4,7 @@ This folder contains instructions to fine-tune Llama 2 on a
 * [single-GPU setup](./singlegpu_finetuning.md)
 * [multi-GPU setup](./multigpu_finetuning.md) 
 
-using the canonical [finetuning script](../src/llama_recipes/finetuning.py) in the llama-recipes package.
+using the canonical [finetuning script](../src/finetuning.py) in the llama-recipes package.
 
 If you are new to fine-tuning techniques, check out an overview: [](./LLM_finetuning_overview.md)
 
@@ -15,10 +15,10 @@ If you are new to fine-tuning techniques, check out an overview: [](./LLM_finetu
 ## How to configure finetuning settings?
 
 > [!TIP]
-> All the setting defined in [config files](../../src/llama_recipes/configs/) can be passed as args through CLI when running the script, there is no need to change from config files directly.
+> All the setting defined in [config files](../src/configs/) can be passed as args through CLI when running the script, there is no need to change from config files directly.
 
 
-* [Training config file](../../src/llama_recipes/configs/training.py) is the main config file that helps to specify the settings for our run and can be found in [configs folder](../../src/llama_recipes/configs/)
+* [Training config file](../src/configs/training.py) is the main config file that helps to specify the settings for our run and can be found in [configs folder](../src/configs/)
 
 It lets us specify the training settings for everything from `model_name` to `dataset_name`, `batch_size` and so on. Below is the list of supported settings:
 
@@ -51,11 +51,11 @@ save_optimizer: bool=False
 
 ```
 
-* [Datasets config file](../../src/llama_recipes/configs/datasets.py) provides the available options for datasets.
+* [Datasets config file](../src/configs/datasets.py) provides the available options for datasets.
 
-* [peft config file](../../src/llama_recipes/configs/peft.py) provides the supported PEFT methods and respective settings that can be modified.
+* [peft config file](../src/configs/peft.py) provides the supported PEFT methods and respective settings that can be modified.
 
-* [FSDP config file](../../src/llama_recipes/configs/fsdp.py) provides FSDP settings such as:
+* [FSDP config file](../src/configs/fsdp.py) provides FSDP settings such as:
 
     * `mixed_precision` boolean flag to specify using mixed precision, defatults to true.
 
