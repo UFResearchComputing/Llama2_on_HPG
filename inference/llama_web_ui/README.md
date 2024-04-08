@@ -4,7 +4,7 @@ If you prefer to see Llama2 in action in a web UI, instead of the notebooks abov
 ### Running [Streamlit](https://streamlit.io/) with Llama2
 Open a Terminal, run the following commands:
 ```
-pip install streamlit langchain replicate
+# pip install streamlit langchain replicate
 git clone https://github.com/facebookresearch/llama-recipes
 cd llama-recipes/llama-demo-apps
 ```
