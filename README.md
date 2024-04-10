@@ -30,9 +30,9 @@ All the LLaMA2 models have already been downloaded to '/data/ai/models/nlp/llama
 
 1. [01. Getting to know Llama_2](01_getting_start_Llama_2.ipynb): This session is to provide a guided tour of Llama2, including understanding different Llama 2 models, how access them on HPG, Generative AI and Chatbot architectures, prompt engineering, RAG (Retrieval Augmented Generation), Fine-tuning and more.
 
-2. [02. Prompt Engineering with Llama2](02_prompt_engineering_with_Llama_2.ipynb): This session interactive guide covers prompt engineering & best practices with Llama 2 user [Replicate API](https://replicate.com/meta/llama-2-70b-chat).
+2. [02. Prompt Engineering with Llama_2](02_prompt_engineering_with_Llama_2.ipynb): This session interactive guide covers prompt engineering & best practices with Llama 2 user [Replicate API](https://replicate.com/meta/llama-2-70b-chat).
 
-3. [03. Fine tuning Llama2](03_fine_tuning_Llama_2.ipynb): This session shows how to train a Llama2 model on a single GPU (e.g. A100 with 80GB) using int8 quantization and LoRA. 
+3. [03. Fine tuning Llama_2](03_fine_tuning_Llama_2.ipynb): This session shows how to train a Llama2 model on a single GPU (e.g. A100 with 80GB) using int8 quantization and LoRA. 
 
 ## Finetuning and Inference
 
