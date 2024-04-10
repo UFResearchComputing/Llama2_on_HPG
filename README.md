@@ -28,16 +28,16 @@ We are also providing downloads on [Hugging Face](https://huggingface.co/meta-ll
 
 All the LLaMA2 models have already been downloaded to '/data/ai/models/nlp/llama'. You can run the model on HPG via the command line using 'ml llama/2', 'ml llama/llama-hf', 'ml nlp/1.3', or in the Jupyter Notebook with the 'LLAMA2', 'LLAMA2-HF', 'nlp-1.3' kernels. For this tutorial, we recommend using the 'nlp-1.3' kernel.
 
-1. [01. Getting to know Llama_2](01_getting_start_Llama_2.ipynb): This session is to provide a guided tour of Llama2, including understanding different Llama 2 models, how access them on HPG, Generative AI and Chatbot architectures, prompt engineering, RAG (Retrieval Augmented Generation), Fine-tuning and more.
+* [01. Getting to know Llama_2](01_getting_start_Llama_2.ipynb): This session is to provide a guided tour of Llama2, including understanding different Llama 2 models, how access them on HPG, Generative AI and Chatbot architectures, prompt engineering, RAG (Retrieval Augmented Generation), Fine-tuning and more.
 
-2. [02. Prompt Engineering with Llama_2](02_prompt_engineering_with_Llama_2.ipynb): This session interactive guide covers prompt engineering & best practices with Llama 2 user [Replicate API](https://replicate.com/meta/llama-2-70b-chat).
+* [02. Prompt Engineering with Llama_2](02_prompt_engineering_with_Llama_2.ipynb): This session interactive guide covers prompt engineering & best practices with Llama 2 user [Replicate API](https://replicate.com/meta/llama-2-70b-chat).
 
-3. [03. Fine tuning Llama_2](03_fine_tuning_Llama_2.ipynb): This session shows how to train a Llama2 model on a single GPU (e.g. A100 with 80GB) using int8 quantization and LoRA. 
+* [03. Fine tuning Llama_2](03_fine_tuning_Llama_2.ipynb): This session shows how to train a Llama2 model on a single GPU (e.g. A100 with 80GB) using int8 quantization and LoRA. 
 
 ## Finetuning and Inference
 
-1. If you insteaed in finetune Llama2 on single-GPU and multi-GPU setups, you can find recipes at [finetuning](./finetuning).
-2. If you want to deploy Llama2 for inference locally and using model servers, you can find recipes at [inference](./inference).
+* If you insteaed in finetune Llama2 on single-GPU and multi-GPU setups, you can find recipes at [finetuning](./finetuning).
+* If you want to deploy Llama2 for inference locally and using model servers, you can find recipes at [inference](./inference).
 
 More other recipes and metarial can be found at [meta-llama/llama-recipes](https://github.com/meta-llama/llama-recipes)
 
