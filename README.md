@@ -26,7 +26,7 @@ We are also providing downloads on [Hugging Face](https://huggingface.co/meta-ll
 
 ## Quick Start Llama2 on HiPerGator (HPG)
 
-All the LLaMA2 models have already been downloaded to '/data/ai/models/nlp/llama'. You can run the model on HPG via the command line using 'ml llama/2', 'ml llama/llama-hf', 'ml nlp/1.3', or in the Jupyter Notebook with the 'LLAMA2', 'LLAMA2-HF', 'nlp-1.3' kernels. For this tutorial, we recommend using the 'nlp-1.3' kernel.
+All the LLama2 models have already been downloaded to '/data/ai/models/nlp/llama/models_llama2'. You can run the model on HPG via the command line using 'ml llama/2', 'ml llama/llama-hf', 'ml nlp/1.3', or in the Jupyter Notebook with the 'LLAMA2', 'LLAMA2-HF', 'nlp-1.3' kernels. For this tutorial, we recommend using the 'nlp-1.3' kernel.
 
 * [01. Getting start with Llama_2](01_getting_start_Llama_2.ipynb): This session is to provide a guided tour of Llama2, including understanding different Llama 2 models, how access them on HPG, Generative AI and Chatbot architectures, prompt engineering, RAG (Retrieval Augmented Generation), Fine-tuning and more.
 
