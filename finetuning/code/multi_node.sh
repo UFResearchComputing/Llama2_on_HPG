@@ -20,9 +20,9 @@ module load nlp/1.3
 cd /data/ai/tutorial/Llama2_on_HPG/finetuning
 
 # Running the torchrun command
-torchrun --nproc_per_node=4 \
-              finetuning.py --enable_fsdp --use_peft --peft_method lora \
-              --model_name /data/ai/models/nlp/llama/models_llama2/llama-2-13b-hf \
-              --output_dir /data/ai/tutorial/Llama2_on_HPG/finetuning/models/2nodes8gpus
+torchrun --nproc_per_node=4 finetuning.py \
+         --enable_fsdp --use_peft --peft_method lora \
+         --model_name /data/ai/models/nlp/llama/models_llama2/llama-2-13b-hf \
+         --output_dir /data/ai/tutorial/Llama2_on_HPG/finetuning/models/2nodes8gpus
 
 
