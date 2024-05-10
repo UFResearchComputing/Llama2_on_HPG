@@ -4,14 +4,14 @@ This folder contains instructions to fine-tune Llama 2 on a
 * [single-GPU setup](./singlegpu_finetuning.md)
 * [multi-GPU setup](./multigpu_finetuning.md) 
 
-using the canonical [finetuning script](../src/finetuning.py) in the llama-recipes package.
+using the canonical [finetuning script](./src/llama_recipes/finetuning.py) in the llama-recipes package.
 
 If you are new to fine-tuning techniques, check out an overview: [](./LLM_finetuning_overview.md)
 
 ## How to configure finetuning settings?
 
 > [!TIP]
-> All the setting defined in [config files](../src/configs/) can be passed as args through CLI when running the script, there is no need to change from config files directly.
+> All the setting defined in [config files](./src/llama_recipes/configs/) can be passed as args through CLI when running the script, there is no need to change from config files directly.
 
 
 * [Training config file](./src/llama_recipes/configs/training.py) is the main config file that helps to specify the settings for our run and can be found in [configs folder](./src/llama_recipes/configs/)
