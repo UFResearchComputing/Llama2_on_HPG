@@ -39,7 +39,7 @@ Currently 3 open source datasets are supported that can be found in [Datasets co
 
 
 ```bash
-wget -P ../../src/llama_recipes/datasets https://raw.githubusercontent.com/tatsu-lab/stanford_alpaca/main/alpaca_data.json
+wget -P ./src/llama_recipes/datasets https://raw.githubusercontent.com/tatsu-lab/stanford_alpaca/main/alpaca_data.json
 ```
 
 * `samsum_dataset`
