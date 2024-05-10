@@ -51,7 +51,7 @@ save_optimizer: bool=False
 
 * [peft config file](./src/llama_recipes/configs/peft.py) provides the supported PEFT methods and respective settings that can be modified.
 
-* [FSDP config file](./src/llama_recipes/src/configs/fsdp.py) provides FSDP settings such as:
+* [FSDP config file](./src/llama_recipes/configs/fsdp.py) provides FSDP settings such as:
 
     * `mixed_precision` boolean flag to specify using mixed precision, defatults to true.
 
