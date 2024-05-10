@@ -1,7 +1,7 @@
 # Fine-tuning with Single GPU
 This recipe steps you through how to finetune a Llama 2 model on the text summarization task using the [samsum](https://huggingface.co/datasets/samsum) dataset on a single GPU.
 
-These are the instructions for using the canonical [finetuning script](../src/finetuning.py) in the llama-recipes package.
+These are the instructions for using the canonical [finetuning script](./src/llama_recipes/finetuning.py) in the llama-recipes package.
 
 
 ## Requirements
@@ -31,7 +31,7 @@ The args used in the command above are:
  
 ### How to run with different datasets?
 
-Currently 3 open source datasets are supported that can be found in [Datasets config file](../src/configs/datasets.py). You can also use your custom dataset (more info [here](./datasets/README.md)).
+Currently 3 open source datasets are supported that can be found in [Datasets config file](./src/llama_recipes/configs/datasets.py). You can also use your custom dataset (more info [here](./datasets/README.md)).
 
 * `grammar_dataset` : use this [notebook](../src/datasets/grammar_dataset/grammar_dataset_process.ipynb) to pull and process the Jfleg and C4 200M datasets for grammar checking.
 
