@@ -19,7 +19,6 @@ module load nlp/1.3
 
 cd /data/ai/tutorial/Llama2_on_HPG/finetuning
 
-python finetuning.py --use_peft --peft_method lora --quantization \ 
-       --dataset grammar_dataset \
+python finetuning.py --use_peft --peft_method lora --quantization --dataset grammar_dataset \
        --model_name /data/ai/models/nlp/llama/models_llama2/llama-2-7b-hf \
        --output_dir /data/ai/tutorial/Llama2_on_HPG/finetuning/models/1gpu/grammar
