@@ -2,7 +2,7 @@
 
 #SBATCH --job-name=llama2-2nodes8gpus
 #SBATCH --mail-type=ALL               # Mail events (NONE, BEGIN, END, FAIL, ALL)
-#SBATCH --mail-user=zhao.qian@ufl.edu # Where to send mail
+#SBATCH --mail-user=...@ufl.edu       # Where to send mail
 #SBATCH --ntasks=2
 #SBATCH --nodes=2
 #SBATCH --time=08:00:00               # Time limit hrs:min:sec
