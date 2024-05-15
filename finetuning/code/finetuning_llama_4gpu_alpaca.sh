@@ -15,7 +15,7 @@
 #SBATCH --output=job-%j.out
 #SBATCH --error=job-%j.err
 
-module load nlp/1.3
+module load llama/2
 
 cd /data/ai/tutorial/Llama2_on_HPG/finetuning
 
