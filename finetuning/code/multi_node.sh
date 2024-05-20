@@ -17,12 +17,12 @@
 
 module load llama/2
 
-cd /data/ai/tutorial/Llama2_on_HPG/finetuning
+cd /data/ai/tutorial/Llama2_on_HPG/finetuning # Important Note: Please specify the path to your own directory.
 
 # Running the torchrun command
 torchrun --nproc_per_node=4 finetuning.py \
          --enable_fsdp --use_peft --peft_method lora \
          --model_name /data/ai/models/nlp/llama/models_llama2/llama-2-70b-hf \
-         --output_dir /data/ai/tutorial/Llama2_on_HPG/finetuning/models/2nodes8gpus
+         --output_dir /data/ai/tutorial/Llama2_on_HPG/finetuning/models/2nodes8gpus # Important Note: Please specify the path to your own directory.
 
 
