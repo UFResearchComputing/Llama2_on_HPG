@@ -32,7 +32,9 @@ All the LLama2 models have already been downloaded to `/data/ai/models/nlp/llama
 
 * [02. Prompt Engineering with Llama_2](02_prompt_engineering_with_Llama_2.ipynb): This session interactive guide covers prompt engineering & best practices with Llama 2 user [Replicate API](https://replicate.com/meta/llama-2-70b-chat).
 
-* [03. Fine tuning Llama_2](03_fine_tuning_Llama_2.ipynb): This session shows how to train a Llama2 model on a single GPU (e.g. A100 with 80GB) using int8 quantization and LoRA. 
+* [03. Fine tuning Llama_2](03_fine_tuning_Llama_2.ipynb): This session shows how to train a Llama2 model on a single GPU (e.g. A100 with 80GB) using int8 quantization and LoRA.
+
+* [04._Inference_Llama_2_locally](04_Inference_Llama_2_locally.ipynb): This session shows how to run inference with Llama2 models using the command line.
 
 ## Finetuning and Inference
 
