@@ -42,4 +42,4 @@ All the LLama2 models have already been downloaded to `/data/ai/models/nlp/llama
 More other recipes and metarials can be found at [meta-llama/llama-recipes](https://github.com/meta-llama/llama-recipes)
 
 ## License  
-All rights are reserved by the [Meta Llama team](https://llama.meta.com/) Please refer to the [Meta Llama License file](./llama/LICENSE) and the Acceptable [Use Policy](./llama/USE_POLICY.md).
+All rights are reserved by the [Meta Llama team](https://llama.meta.com/) Please refer to the [Meta Llama License file](https://github.com/meta-llama/llama/blob/main/LICENSE) and the Acceptable [Use Policy](https://github.com/meta-llama/llama/blob/main/USE_POLICY.md).
